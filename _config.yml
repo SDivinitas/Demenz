@@ -1,0 +1,36 @@
+# Basisdaten für das Projekt Demenz
+
+title: "Demenz Projekt"
+description: "Ein Projekt zur Unterstützung von Menschen mit Demenz"
+author: "Sergej"
+email: "sergej@example.com"
+baseurl: "" # Das Basis-URL des Projekts, z.B. /blog
+#url: "http://example.com" # Die URL der Website
+language: "de"
+timezone: "Europe/Berlin"
+
+# Konfiguration für das Theme
+theme: "minimal"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Markdown-Konfiguration
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: "de"
+
+# Exclude-Dateien und -Ordner
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Weitere Einstellungen
+paginate: 5
+paginate_path: "/seite/:num/"
